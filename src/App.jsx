@@ -133,6 +133,37 @@ export default function App() {
     <div className={styles.app}>
       <div className={styles.grain} aria-hidden="true" />
 
+      {/* SITE NAV */}
+      <nav className="nk-nav">
+        <div className="nk-nav-inner">
+          <a href="https://nextus.world/index.html" className="nk-nav-logo">
+            <img src="https://nextus.world/logo_nav.png" alt="NextUs" />
+          </a>
+          <div className="nk-nav-links">
+            <a href="https://nextus.world/index.html">Home</a>
+            <a href="https://nextus.world/life-os.html">Life OS</a>
+            <a href="https://nextus.world/nextus.html" className="active">NextUs</a>
+            <a href="https://nextus.world/work-with-nik.html">Work with Nik</a>
+            <a href="https://nextus.world/about.html">About</a>
+            <a href="https://nextus.world/podcast.html">Podcast</a>
+          </div>
+          <a href="https://nextus.world/login.html" className="nk-profile-dot" id="nk-profile-dot" title="Sign in" style={{display:'none'}}>→</a>
+          <button className="nk-hamburger" aria-label="Menu"
+            onClick={(e) => { e.currentTarget.classList.toggle('open'); document.getElementById('nk-mob-da').classList.toggle('open'); }}>
+            <span/><span/><span/>
+          </button>
+        </div>
+      </nav>
+      <div id="nk-mob-da" className="nk-mobile-menu">
+        <a href="https://nextus.world/index.html">Home</a>
+        <a href="https://nextus.world/life-os.html">Life OS</a>
+        <a href="https://nextus.world/nextus.html">NextUs</a>
+        <a href="https://nextus.world/work-with-nik.html">Work with Nik</a>
+        <a href="https://nextus.world/about.html">About</a>
+        <a href="https://nextus.world/podcast.html">Podcast</a>
+        <a href="https://nextus.world/login.html">Sign in →</a>
+      </div>
+
       {/* Header */}
       <header className={styles.header}>
         <div className={styles.headerInner}>
@@ -241,6 +272,38 @@ function SessionSetup({ onStart }) {
   return (
     <div className={styles.setup}>
       <div className={styles.grain} aria-hidden="true" />
+
+      {/* SITE NAV */}
+      <nav className="nk-nav">
+        <div className="nk-nav-inner">
+          <a href="https://nextus.world/index.html" className="nk-nav-logo">
+            <img src="https://nextus.world/logo_nav.png" alt="NextUs" />
+          </a>
+          <div className="nk-nav-links">
+            <a href="https://nextus.world/index.html">Home</a>
+            <a href="https://nextus.world/life-os.html">Life OS</a>
+            <a href="https://nextus.world/nextus.html" className="active">NextUs</a>
+            <a href="https://nextus.world/work-with-nik.html">Work with Nik</a>
+            <a href="https://nextus.world/about.html">About</a>
+            <a href="https://nextus.world/podcast.html">Podcast</a>
+          </div>
+          <a href="https://nextus.world/login.html" className="nk-profile-dot" id="nk-profile-dot" title="Sign in" style={{display:'none'}}>→</a>
+          <button className="nk-hamburger" aria-label="Menu"
+            onClick={(e) => { e.currentTarget.classList.toggle('open'); document.getElementById('nk-mob-da').classList.toggle('open'); }}>
+            <span/><span/><span/>
+          </button>
+        </div>
+      </nav>
+      <div id="nk-mob-da" className="nk-mobile-menu">
+        <a href="https://nextus.world/index.html">Home</a>
+        <a href="https://nextus.world/life-os.html">Life OS</a>
+        <a href="https://nextus.world/nextus.html">NextUs</a>
+        <a href="https://nextus.world/work-with-nik.html">Work with Nik</a>
+        <a href="https://nextus.world/about.html">About</a>
+        <a href="https://nextus.world/podcast.html">Podcast</a>
+        <a href="https://nextus.world/login.html">Sign in →</a>
+      </div>
+
       <div className={styles.setupInner}>
         <p className={styles.eyebrow}>NextUs · Decision Analytics</p>
         <h1 className={styles.setupTitle}>New Session</h1>
